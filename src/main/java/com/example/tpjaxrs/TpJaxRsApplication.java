@@ -17,6 +17,7 @@ public class TpJaxRsApplication {
         SpringApplication.run(TpJaxRsApplication.class, args);
     }
 
+
     @Bean
     CommandLineRunner start(CompteRepository compteRepository) {
         return args -> {
@@ -29,5 +30,4 @@ public class TpJaxRsApplication {
             });
         };
     }
-
 }

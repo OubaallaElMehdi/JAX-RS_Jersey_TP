@@ -1,12 +1,13 @@
 package com.example.tpjaxrs.entity;
 
 import jakarta.persistence.*;
-import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement; // Correct JAXB import for Java 17+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -27,4 +28,3 @@ public class Compte {
     private TypeCompte typeCompte;
 
 }
-
